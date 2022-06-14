@@ -8,7 +8,7 @@ public class sheeps {
     }
 
     public static int totalSheeps (int sheeps){
-        System.out.println("Результат равен: "+ sheeps +"овец (штук).");
+        System.out.println("Результат равен: " + sheeps + " овец (штук).");
         return 0;
     }
 }
