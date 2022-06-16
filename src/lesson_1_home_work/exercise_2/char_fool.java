@@ -1,4 +1,4 @@
-//// ########## lesson_1 git lesson_2_home_work.exercise_2 ##########
+//// ########## lesson_1 git lesson_1_home_work.exercise_2 ##########
 // 2. Поиграться с char. Объявить переменную, прибавить к ней int значение (допустим 1 10 22) и отнять, объяснить как это рабоатет, т.е. какой результат получаем и почему.
 package lesson_1_home_work.exercise_2;
 
