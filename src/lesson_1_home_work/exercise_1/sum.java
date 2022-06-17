@@ -1,4 +1,4 @@
-//// ########## lesson_1 git lesson_2_home_work.exercise_1 ##########
+//// ########## lesson_1 git lesson_1_home_work.exercise_1 ##########
 // 1. Написать метод увеличения счета (счет и часть для увеличения int, всегда положительные), объяснить какие могут быть проблемы.
 package lesson_1_home_work.exercise_1;
 
