@@ -1,5 +1,5 @@
 //// ########## lesson_1 personal lesson_2_home_work.exercise_1 ##########
-// 1. к int 2147483647 прибавить 1, вывести результат, объяснить что происходит
+// 1. К максимальному значению базового типа данных int 2147483647 прибавить 1, вывести результат, объяснить что происходит
 package lesson_1_home_work.lesson_1_theory_exercises;
 
 public class exercise_1 {

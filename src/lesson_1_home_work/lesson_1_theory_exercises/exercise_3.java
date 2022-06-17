@@ -1,5 +1,5 @@
 //// ########## lesson_1 personal lesson_2_home_work.exercise_3 ##########
-// 3. К long 9223372036854775807 прибавить 1. вывести, объяснить что происходит
+// 3. К максимальному значению базового типа данных long прибавить 1. вывести, объяснить что происходит
 package lesson_1_home_work.lesson_1_theory_exercises;
 
 public class exercise_3 {

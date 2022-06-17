@@ -6,7 +6,7 @@ public class exercise_2 {
     public static void main(String[] args) {
         int justMillion = 1000000;
         int justMillionSquare = justMillion * justMillion;
-        System.out.println("Результат возведения в квадрат миллиона: " + justMillionSquare);
+        System.out.println("Результат умножения значения justMillion на само себя: " + justMillionSquare);
     }
 }
 
