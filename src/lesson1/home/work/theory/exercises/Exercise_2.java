@@ -1,4 +1,4 @@
-//// ########## lesson_1 personal lesson_2_home_work.exercise_2 ##########
+//// ########## lesson_1 theory exercise_2 ##########
 // 2. int 1000000 умножить на себя, вывести, объяснить что происходит
 package lesson1.home.work.theory.exercises;
 

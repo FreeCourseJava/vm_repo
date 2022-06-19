@@ -1,4 +1,4 @@
-//// ########## lesson_1 personal lesson_2_home_work.exercise_3 ##########
+//// ########## lesson_1 theory exercise_3 ##########
 // 3. К максимальному значению базового типа данных long прибавить 1. вывести, объяснить что происходит
 package lesson1.home.work.theory.exercises;
 
