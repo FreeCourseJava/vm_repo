@@ -1,8 +1,8 @@
-//// ########## lesson_1 git lesson_1_home_work.lesson_1_git_exercises.exercise_3.exercise_2 ##########
+//// ########## lesson_1 git exercise_2 ##########
 // 2. Поиграться с char. Объявить переменную, прибавить к ней int значение (допустим 1 10 22) и отнять, объяснить как это рабоатет, т.е. какой результат получаем и почему.
-package lesson_1_home_work.lesson_1_git_exercises.exercise_2;
+package lesson1.home.work.git.exercises.exercise_2;
 
-public class char_fool {
+public class CharFool {
     public static void main(String[] args) {
         char charExample = 'x';
         int firstInteger = 11022, secondInteger = 13011;

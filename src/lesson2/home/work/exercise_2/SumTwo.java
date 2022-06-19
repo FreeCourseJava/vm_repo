@@ -1,16 +1,16 @@
-//// ########## lesson_2 git lesson_2_home_work.exercise_2 ##########
+//// ########## lesson_2 git exercise_2 ##########
 // 2. Доработать метод из ДЗ предыдущего урока, увеличивающий баланс таким образом: если сложили 2 больших положительных числа, но получилось отрицательное - вернуть 0
-package lesson_2_home_work.exercise_2;
+package lesson2.home.work.exercise_2;
 
-public class sumTwo {
+public class SumTwo {
     public static void main(String[] args) {
         int bill=10, partOfBill=333; // Пример для валидного сложения
 //        int bill=10, partOfBill=Integer.MAX_VALUE; // Пример для целочисленного переполения
-        int finalScore = getfinalScore(bill,partOfBill);
+        int finalScore = getFinalScore(bill,partOfBill);
         System.out.println("Результат сложения " + bill + " и " + partOfBill + " равен: " + finalScore);
 
     }
-    public static int getfinalScore (int bill, int partOfBill){
+    public static int getFinalScore (int bill, int partOfBill){
         int sum = bill + partOfBill;
         if ( sum < 0 ) {
             return 0;

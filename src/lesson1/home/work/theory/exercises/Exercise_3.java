@@ -1,8 +1,8 @@
-//// ########## lesson_1 personal lesson_2_home_work.exercise_3 ##########
+//// ########## lesson_1 theory exercise_3 ##########
 // 3. К максимальному значению базового типа данных long прибавить 1. вывести, объяснить что происходит
-package lesson_1_home_work.lesson_1_theory_exercises;
+package lesson1.home.work.theory.exercises;
 
-public class exercise_3 {
+public class Exercise_3 {
     public static void main(String[] args) {
         long javaMaxLong = Long.MAX_VALUE;
         long maxAndOne = javaMaxLong + 1;

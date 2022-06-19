@@ -1,8 +1,8 @@
-//// ########## lesson_1 git lesson_1_home_work.lesson_1_git_exercises.exercise_3.exercise_1 ##########
+//// ########## lesson_1 git exercise_1 ##########
 // 1. Написать метод увеличения счета (счет и часть для увеличения int, всегда положительные), объяснить какие могут быть проблемы.
-package lesson_1_home_work.lesson_1_git_exercises.exercise_1;
+package lesson1.home.work.git.exercises.exercise_1;
 
-public class sum {
+public class Sum {
     public static void main(String[] args) {
         int total = getFinalScore(10,11);
         System.out.println(total);

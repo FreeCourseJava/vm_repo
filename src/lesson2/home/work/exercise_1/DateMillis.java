@@ -1,9 +1,9 @@
-//// ########## lesson_2 git lesson_2_home_work.exercise_1 ##########
+//// ########## lesson_2 git exercise_1 ##########
 // 1. Написать метод принимающий колличество дней (положительное или отрицательное) и возвращающий дату в виде таймстемпа (миллисикунды с 1970 года) в виде long.
-package lesson_2_home_work.exercise_1;
+package lesson2.home.work.exercise_1;
 import java.util.concurrent.TimeUnit;
 
-public class dateMillis {
+public class DateMillis {
     public static void main(String[] args) {
         int days = 10;
         long firstMethod = getFirstDaysIntoMillis(days);
