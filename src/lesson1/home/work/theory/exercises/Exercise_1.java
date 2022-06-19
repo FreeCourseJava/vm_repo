@@ -1,8 +1,8 @@
 //// ########## lesson_1 personal lesson_2_home_work.exercise_1 ##########
 // 1. К максимальному значению базового типа данных int 2147483647 прибавить 1, вывести результат, объяснить что происходит
-package lesson_1_home_work.lesson_1_theory_exercises;
+package lesson1.home.work.theory.exercises;
 
-public class exercise_1 {
+public class Exercise_1 {
     public static void main(String[] args) {
         int javaMaxInteger = Integer.MAX_VALUE;
         int maxAndOne = javaMaxInteger + 1;

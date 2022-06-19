@@ -4,14 +4,15 @@
 // если получаем положительное, но вычитаем из него большее (т.е. получаем отрицательное), то возвращаем отрицательное.
 // Так же учесть кейс, когда у нас первое число отрицательное и второе положительное/отрицательное.
 // Иначе говоря:  пытаемся придумать как проверить, что не произошло дерьмо с int overflow.
-package lesson_2_home_work.exercise_3;
+package lesson2.home.work.exercise_3;
 
-public class sumThree {
+public class SumThree {
     public static void main(String[] args) {
-        int bill=123, partOfBill=321; // два валидных полохительных числа
+//        int bill=123, partOfBill=321; // два валидных полохительных числа
 //        int bill=-123, partOfBill=-321; // два валидных полохительных числа
 //        int bill=-123, partOfBill=-321; // два валидных числа (положительное и отрицательное)
 //        int bill=Integer.MAX_VALUE, partOfBill=1; // два числа для случая int overflow
+        int bill=Integer.MIN_VALUE, partOfBill=-111; // два числа для случая int underflow
         int finalScore = getfinalScore(bill,partOfBill);
         System.out.println("Результат сложения " + bill + " и " + partOfBill + " равен: " + finalScore);
 
@@ -21,6 +22,13 @@ public class sumThree {
         if ( bill > 0 && partOfBill > 0) {
             if ( sum < 0 ) {
                 System.out.println("Результат сложения привел к int overflow");
+                return 0;
+            }
+            return sum;
+        }
+        if ( bill < 0 || partOfBill < 0) {
+            if ( sum > 0 ) {
+                System.out.println("Результат сложения привел к int underflow");
                 return 0;
             }
             return sum;

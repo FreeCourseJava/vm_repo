@@ -1,8 +1,8 @@
 //// ########## lesson_1 personal lesson_2_home_work.exercise_2 ##########
 // 2. int 1000000 умножить на себя, вывести, объяснить что происходит
-package lesson_1_home_work.lesson_1_theory_exercises;
+package lesson1.home.work.theory.exercises;
 
-public class exercise_2 {
+public class Exercise_2 {
     public static void main(String[] args) {
         int justMillion = 1000000;
         int justMillionSquare = justMillion * justMillion;
