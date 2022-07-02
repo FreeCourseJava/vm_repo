@@ -4,10 +4,10 @@ package lesson1.home.work.git.exercises.exercise_1;
 
 public class Sum {
     public static void main(String[] args) {
-        int total = getFinalScore(10,11);
-        System.out.println(total);
-
+//        int total = getFinalScore(10,11);
+        System.out.println(getFinalScore(10,11));
     }
+
     public static int getFinalScore (int bill, int partOfBill){
         return bill + partOfBill;
     }
