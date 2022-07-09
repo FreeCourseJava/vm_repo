@@ -13,7 +13,7 @@ public class MethodForTatarstan {
         int[] sortedTatarstanYears = getTatarstanBubble(tatarstanInterestingYears);
         int randomYearElementNumber = getRandomArrayElementNumber(1,1,randomYears.length);
         int randomYear = randomYears[randomYearElementNumber];
-        boolean resultOfSearching = getBinarySearch(sortedTatarstanYears,randomYears[randomYearElementNumber]);
+        boolean resultOfSearching = getSearch(sortedTatarstanYears,randomYears[randomYearElementNumber]);
         if (resultOfSearching){
             System.out.println(randomYear + " год есть в массиве исторически важных дат республики Татарстан");
         }
@@ -22,7 +22,7 @@ public class MethodForTatarstan {
         }
     }
 
-    public static boolean getBinarySearch(int[] arrayForSearching, int valueForSearching) {
+    public static boolean getSearch(int[] arrayForSearching, int valueForSearching) {
         int arrayFirstElement = 0; int arrayLastElement = arrayForSearching.length - 1;
         for ( ; ; ) {
             int key = (arrayFirstElement + arrayLastElement) / 2;
