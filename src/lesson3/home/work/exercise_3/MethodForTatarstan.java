@@ -13,8 +13,17 @@ public class MethodForTatarstan {
         int[] sortedTatarstanYears = getTatarstanBubble(tatarstanInterestingYears);
         int randomYearElementNumber = getRandomArrayElementNumber(1,1,randomYears.length);
         int randomYear = randomYears[randomYearElementNumber];
+
         boolean resultOfSearching = getSearch(sortedTatarstanYears,randomYears[randomYearElementNumber]);
         if (resultOfSearching){
+            System.out.println(randomYear + " год есть в массиве исторически важных дат республики Татарстан");
+        }
+        else {
+            System.out.println(randomYear + " год отсутствует в массиве исторически важных дат республики Татарстан");
+        }
+
+        boolean resultOfSearchingWithWhile = getSearchWithWhile(sortedTatarstanYears,randomYears[randomYearElementNumber]);
+        if (resultOfSearchingWithWhile){
             System.out.println(randomYear + " год есть в массиве исторически важных дат республики Татарстан");
         }
         else {
@@ -25,6 +34,25 @@ public class MethodForTatarstan {
     public static boolean getSearch(int[] arrayForSearching, int valueForSearching) {
         int arrayFirstElement = 0; int arrayLastElement = arrayForSearching.length - 1;
         for ( ; ; ) {
+            int key = (arrayFirstElement + arrayLastElement) / 2;
+            if (arrayForSearching[key] > valueForSearching) {
+                arrayLastElement = key - 1;
+            }
+            else if (arrayForSearching[key] < valueForSearching) {
+                arrayFirstElement = key + 1;
+            }
+            else {
+                return true;
+            }
+            if (arrayFirstElement > arrayLastElement) {
+                return false;
+            }
+        }
+    }
+
+    public static boolean getSearchWithWhile(int[] arrayForSearching, int valueForSearching) {
+        int arrayFirstElement = 0; int arrayLastElement = arrayForSearching.length - 1;
+        while (true) {
             int key = (arrayFirstElement + arrayLastElement) / 2;
             if (arrayForSearching[key] > valueForSearching) {
                 arrayLastElement = key - 1;

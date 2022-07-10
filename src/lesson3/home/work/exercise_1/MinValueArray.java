@@ -23,7 +23,7 @@ public class MinValueArray {
                 totalCountOfChanges++;
             }
         }
-        System.out.println("В массиве для упражнения произошло " + totalCountOfChanges + " подмен, элементов с индесами\n" + listTotalChanged);
+        System.out.println("В массиве для упражнения количество подмен равно " + totalCountOfChanges + " для элементов с индесами\n" + listTotalChanged);
     }
 
     public static int getRandomArraySizeForExercise (int size, int minSize, int maxSize){
