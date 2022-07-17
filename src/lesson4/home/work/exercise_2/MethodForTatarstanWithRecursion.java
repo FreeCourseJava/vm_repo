@@ -9,8 +9,8 @@ public class MethodForTatarstanWithRecursion {
         int[] tatarstanInterestingYears = {1408, 1611, 1005, 1654, 1801, 1791, 1855, 1431, 1770, 1758, 1524, 1236, 1841, 1487, 1786, 1486, 1177, 1552, 1860, 1708, 1718};
         int[] randomYears = {1438, 1511, 1905, 1754, 1841, 1891, 1875, 1439, 1760, 1558,1431, 1770, 1758, 1524, 1236, 1841, 1487, 1786, 1486, 1177};
         int randomYear = randomYears[getRandomArrayElementNumber(randomYears.length)];
-        int resultOfSearching = getSearchWithRecursion(tatarstanInterestingYears,randomYear,0,tatarstanInterestingYears.length-1);
-        if (resultOfSearching == randomYear){
+        boolean resultOfSearching = binarySearchRecursive(tatarstanInterestingYears,randomYear);
+        if (resultOfSearching){
             System.out.println(randomYear + " год есть в массиве исторически важных дат республики Татарстан");
         }
         else {
@@ -18,18 +18,22 @@ public class MethodForTatarstanWithRecursion {
         }
     }
 
-    public static int getSearchWithRecursion(int[] arrayForSearching, int valueForSearching, int arrayFirstElement, int arrayLastElement) {
-        if (arrayLastElement >= arrayFirstElement){
-            int arrayMiddleElement = arrayFirstElement + (arrayLastElement - arrayFirstElement) / 2;
-            if (arrayForSearching[arrayMiddleElement] == valueForSearching){
-                return arrayMiddleElement;
-            }
-            if (arrayForSearching[arrayMiddleElement]>valueForSearching){
-                return getSearchWithRecursion(arrayForSearching, valueForSearching,arrayFirstElement,arrayMiddleElement - 1);
-            }
-            return getSearchWithRecursion(arrayForSearching, valueForSearching,arrayMiddleElement + 1,arrayLastElement);
+    private static boolean binarySearchRecursive(int[] arrayForSearching, int valueForSearching) {
+        if (arrayForSearching.length == 0) {
+            return false;
         }
-        return -1;
+        int arrayFirstElement = 0;
+        int arrayLastElement = arrayForSearching.length - 1;
+        int arrayMiddleElement = (arrayFirstElement + arrayLastElement) / 2;
+        if (arrayForSearching[arrayMiddleElement] == valueForSearching) {
+            return true;
+        }
+        if (arrayForSearching[arrayMiddleElement] < valueForSearching) {
+            arrayFirstElement = arrayMiddleElement + 1;
+        }
+        int[] halfOfArrayForSeaching = new int[arrayMiddleElement];
+        System.arraycopy(arrayForSearching, arrayFirstElement, halfOfArrayForSeaching, 0, arrayMiddleElement);
+        return binarySearchRecursive(halfOfArrayForSeaching, valueForSearching);
     }
 
     public static int getRandomArrayElementNumber (int maxSize){
