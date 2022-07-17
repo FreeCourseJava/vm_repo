@@ -1,6 +1,6 @@
 //// ########## lesson_2 git exercise_2 ##########
 // 2. Доработать метод из ДЗ предыдущего урока, увеличивающий баланс таким образом: если сложили 2 больших положительных числа, но получилось отрицательное - вернуть 0.
-package lesson2.home.work.exercise_2;
+package lesson2.home.work.exercise2;
 
 public class SumTwo {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 //// ########## lesson_1 theory exercise_3 ##########
 // 3. К максимальному значению базового типа данных long прибавить 1. вывести, объяснить что происходит.
-package lesson1.home.work.theory.exercises;
+package lesson1.home.work.theory;
 
 public class Exercise_3 {
     public static void main(String[] args) {

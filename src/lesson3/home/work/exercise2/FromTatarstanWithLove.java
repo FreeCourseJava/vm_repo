@@ -2,7 +2,7 @@
 // 2. Составить массив из значимых годов Республики Татартсан (любые 20), добавить их в массив в рандомном порядке.
 // Написать метод, принимающий массив годов (интов) и возвращающий их в отсортированном порядке.
 // Сортировку реализовать методом bubble sort (пузырьковая сортировка). Для тех кто осилил второе задание.
-package lesson3.home.work.exercise_2;
+package lesson3.home.work.exercise2;
 
 public class FromTatarstanWithLove {
     public static void main(String[] args) {

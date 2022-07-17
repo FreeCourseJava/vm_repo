@@ -1,7 +1,7 @@
 //// ########## lesson_3 git exercise_1 ##########
 // 1. Создать массив интов, заполнить его значениями Integer.MIN_VALUE. Поменять какие-то значения в массиве.
 // Посчитать сколько элементов массива не равны Integer.MIN_VALUE. Таким образом получим сколько элементов менялось от первоначального.
-package lesson3.home.work.exercise_1;
+package lesson3.home.work.exercise1;
 import java.util.*;
 import java.util.stream.Stream;
 
