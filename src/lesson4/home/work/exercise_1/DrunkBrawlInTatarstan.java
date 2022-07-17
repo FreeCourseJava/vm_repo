@@ -26,8 +26,9 @@ public class DrunkBrawlInTatarstan {
                     drinkShot = true;
                 }
             }
-            if (!drinkShot)
+            if (!drinkShot) {
                 break;
+            }
             drinkShot = false;
             arrayLastElement = arrayLastElement - 1;
             for (int i = arrayLastElement - 1; i >= arrayFirstElement; i--) {

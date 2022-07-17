@@ -11,7 +11,7 @@ public class MethodForTatarstanWithRecursion {
 
         int randomYear = randomYears[getRandomArrayElementNumber(1,1,randomYears.length)];
         int resultOfSearching = getSearchWithRecursion(tatarstanInterestingYears,randomYear,0,tatarstanInterestingYears.length-1);
-        if (resultOfSearching==randomYear){
+        if (resultOfSearching == randomYear){
             System.out.println(randomYear + " год есть в массиве исторически важных дат республики Татарстан");
         }
         else {
@@ -20,7 +20,7 @@ public class MethodForTatarstanWithRecursion {
     }
 
     public static int getSearchWithRecursion(int[] arrayForSearching, int valueForSearching, int arrayFirstElement, int arrayLastElement) {
-        if (arrayLastElement>=arrayFirstElement){
+        if (arrayLastElement >= arrayFirstElement){
             int arrayMiddleElement = arrayFirstElement + (arrayLastElement - arrayFirstElement) / 2;
             if (arrayForSearching[arrayMiddleElement]==valueForSearching){
                 return arrayMiddleElement;
