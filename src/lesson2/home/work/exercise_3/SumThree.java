@@ -10,7 +10,8 @@ public class SumThree {
 //        int bill=-123, partOfBill=-321; // два валидных полохительных числа
 //        int bill=-123, partOfBill=-321; // два валидных числа (положительное и отрицательное)
 //        int bill=Integer.MAX_VALUE, partOfBill=1; // два числа для случая int overflow
-        int bill=Integer.MIN_VALUE, partOfBill=-111; // два числа для случая int underflow
+        int bill = Integer.MIN_VALUE;
+        int partOfBill = -111; // два числа для случая int underflow
         int finalScore = getFinalScore(bill,partOfBill);
         System.out.println("Результат сложения " + bill + " и " + partOfBill + " равен: " + finalScore);
 

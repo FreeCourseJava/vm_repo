@@ -17,7 +17,7 @@ public class MinValueArray {
 
         int totalCountOfChanges=0;
         List<Integer> listTotalChanged = new ArrayList<>();
-        for (int i=0; i<newArrayForExercise.length; i++) {
+        for (int i = 0; i < newArrayForExercise.length; i++) {
             if (newArrayForExercise[i] != Integer.MIN_VALUE) {
                 listTotalChanged.add(i);
                 totalCountOfChanges++;
