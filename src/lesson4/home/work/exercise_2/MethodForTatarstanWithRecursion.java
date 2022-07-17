@@ -22,7 +22,7 @@ public class MethodForTatarstanWithRecursion {
     public static int getSearchWithRecursion(int[] arrayForSearching, int valueForSearching, int arrayFirstElement, int arrayLastElement) {
         if (arrayLastElement >= arrayFirstElement){
             int arrayMiddleElement = arrayFirstElement + (arrayLastElement - arrayFirstElement) / 2;
-            if (arrayForSearching[arrayMiddleElement]==valueForSearching){
+            if (arrayForSearching[arrayMiddleElement] == valueForSearching){
                 return arrayMiddleElement;
             }
             if (arrayForSearching[arrayMiddleElement]>valueForSearching){
