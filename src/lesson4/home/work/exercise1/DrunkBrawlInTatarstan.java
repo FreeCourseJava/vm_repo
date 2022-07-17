@@ -1,6 +1,6 @@
 //// ########## lesson_4 git exercise_1 ##########
 // 1. Реализовать сортировку массива интов алгоритмом Cocktail Shaker Sort
-package lesson4.home.work.exercise_1;
+package lesson4.home.work.exercise1;
 
 public class DrunkBrawlInTatarstan {
     public static void main(String[] args) {

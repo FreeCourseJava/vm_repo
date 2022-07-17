@@ -1,6 +1,6 @@
 //// ########## lesson_1 theory exercise_4 ##########
 // 4. Float 1000000000 умножить на само себя несколько раз, вывести результат каждого вычисления и объяснить, что происходит.
-package lesson1.home.work.theory.exercises;
+package lesson1.home.work.theory;
 
 public class Exercise_4 {
     public static void main(String[] args) {

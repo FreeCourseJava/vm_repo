@@ -1,6 +1,6 @@
 //// ########## lesson_1 git exercise_1 ##########
 // 1. Написать метод увеличения счета (счет и часть для увеличения int, всегда положительные), объяснить какие могут быть проблемы.
-package lesson1.home.work.git.exercises.exercise_1;
+package lesson1.home.work.git.exercise1;
 
 public class Sum {
     public static void main(String[] args) {

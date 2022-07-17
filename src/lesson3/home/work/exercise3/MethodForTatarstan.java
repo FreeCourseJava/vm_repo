@@ -2,7 +2,7 @@
 // 3. Написать метод, который на вход принимает отсортированный массив годов (из 2-го задания) и произвольный год,
 // возвращает boolean значение, которое означает наличие или отсутствие даты в переданном массиве.
 // Читаем и используем binary search (бинарный поиск).
-package lesson3.home.work.exercise_3;
+package lesson3.home.work.exercise3;
 import java.util.Random;
 
 public class MethodForTatarstan {

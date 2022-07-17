@@ -1,6 +1,6 @@
 //// ########## lesson_1 theory exercise_2 ##########
 // 2. int 1000000 умножить на себя, вывести, объяснить что происходит.
-package lesson1.home.work.theory.exercises;
+package lesson1.home.work.theory;
 
 public class Exercise_2 {
     public static void main(String[] args) {

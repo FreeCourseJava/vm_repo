@@ -1,6 +1,6 @@
 //// ########## lesson_1 git exercise_3 ##########
 // 3. Написать метод ничего не принимающий int, который выводит в консоль: Результат равен: значение_переменной овец (штук). Метод ничего не возращает, только выводит в консоль.
-package lesson1.home.work.git.exercises.exercise_3;
+package lesson1.home.work.git.exercise3;
 
 public class Sheeps {
     public static void main(String[] args) {

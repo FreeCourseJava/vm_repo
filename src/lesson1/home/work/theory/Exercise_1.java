@@ -1,6 +1,6 @@
 //// ########## lesson_1 theory exercise_1 ##########
 // 1. К максимальному значению базового типа данных int 2147483647 прибавить 1, вывести результат, объяснить что происходит.
-package lesson1.home.work.theory.exercises;
+package lesson1.home.work.theory;
 
 public class Exercise_1 {
     public static void main(String[] args) {
