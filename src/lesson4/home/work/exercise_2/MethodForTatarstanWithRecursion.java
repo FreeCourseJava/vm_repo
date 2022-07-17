@@ -8,8 +8,7 @@ public class MethodForTatarstanWithRecursion {
 
         int[] tatarstanInterestingYears = {1408, 1611, 1005, 1654, 1801, 1791, 1855, 1431, 1770, 1758, 1524, 1236, 1841, 1487, 1786, 1486, 1177, 1552, 1860, 1708, 1718};
         int[] randomYears = {1438, 1511, 1905, 1754, 1841, 1891, 1875, 1439, 1760, 1558,1431, 1770, 1758, 1524, 1236, 1841, 1487, 1786, 1486, 1177};
-
-        int randomYear = randomYears[getRandomArrayElementNumber(1,1,randomYears.length)];
+        int randomYear = randomYears[getRandomArrayElementNumber(randomYears.length)];
         int resultOfSearching = getSearchWithRecursion(tatarstanInterestingYears,randomYear,0,tatarstanInterestingYears.length-1);
         if (resultOfSearching == randomYear){
             System.out.println(randomYear + " год есть в массиве исторически важных дат республики Татарстан");
@@ -33,7 +32,7 @@ public class MethodForTatarstanWithRecursion {
         return -1;
     }
 
-    public static int getRandomArrayElementNumber (int size, int minSize, int maxSize){
-        return new Random().ints(size, minSize, maxSize).findFirst().getAsInt();
+    public static int getRandomArrayElementNumber (int maxSize){
+        return new Random().ints(1, 1, maxSize).findFirst().getAsInt();
     }
 }

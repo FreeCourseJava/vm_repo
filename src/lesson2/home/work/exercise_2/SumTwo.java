@@ -4,7 +4,8 @@ package lesson2.home.work.exercise_2;
 
 public class SumTwo {
     public static void main(String[] args) {
-        int bill=10, partOfBill=333; // Пример для валидного сложения
+        int bill = 10;
+        int partOfBill = 333; // Пример для валидного сложения
 //        int bill=10, partOfBill=Integer.MAX_VALUE; // Пример для целочисленного переполения
         int finalScore = getFinalScore(bill,partOfBill);
         System.out.println("Результат сложения " + bill + " и " + partOfBill + " равен: " + finalScore);

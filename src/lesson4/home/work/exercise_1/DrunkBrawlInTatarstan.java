@@ -15,7 +15,8 @@ public class DrunkBrawlInTatarstan {
 
     public static int[] getDrunkTatarstanSorting(int[] arrayForSorting) {
         boolean drinkShot = true;
-        int arrayFirstElement = 0; int arrayLastElement = arrayForSorting.length;
+        int arrayFirstElement = 0;
+        int arrayLastElement = arrayForSorting.length;
         while (drinkShot) {
             drinkShot = false;
             for (int i = arrayFirstElement; i < arrayLastElement - 1; ++i) {
