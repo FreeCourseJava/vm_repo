@@ -21,7 +21,7 @@ public class TownStreet {
         this.townParks = new TownPark[0];
     }
 
-    public TownStreet(String streetName, int streetKadastrNumber, int streetLength, int streetWidth,boolean mainStreet, TownHouse[] townHouses, TownPark[] townParks) {
+    public TownStreet(String streetName, int streetKadastrNumber, int streetLength, int streetWidth, boolean mainStreet, TownHouse[] townHouses, TownPark[] townParks) {
         this.streetName = streetName;
         this.streetKadastrNumber = streetKadastrNumber;
         this.streetLength = streetLength;
