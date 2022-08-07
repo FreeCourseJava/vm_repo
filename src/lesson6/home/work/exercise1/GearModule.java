@@ -5,5 +5,4 @@ package lesson6.home.work.exercise1;
 public class GearModule extends GearTeeth {
     float PitchDiameter;
     float PitchCircle;
-    Teeth[] teeth;
 }
