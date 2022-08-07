@@ -1,6 +1,6 @@
 //// ########## lesson_7 git exercise_1 ##########
-// 1. написать метод для класса улицы, который добавляет дом - добавление  неизвестного кол-ва улиц/домов
-// 1.1 написать метод для класса города, который добавляет улицу - добавление  неизвестного кол-ва улиц/домов
+// 1. написать метод для класса улицы, который добавляет дом - добавление неизвестного кол-ва улиц/домов
+// 1.1 написать метод для класса города, который добавляет улицу - добавление неизвестного кол-ва улиц/домов
 // 2. каждая улица возвращает площадь занимаемую домами
 // 2.1 каждый город возвращает площадь занимаемую улицами и площадь парков
 // 2.2 каждый город возвращает количество домов
@@ -27,9 +27,9 @@ public class DowntonAbbey {
         System.out.println("Количество домов улицы Krasnodoncev равна: " + cherKrasnodoncev.getTownHousesQuantity());
 
         TownStreet cherLebedeva = new TownStreet("Lebedeva", 215, 200, 3, false, housesOfCherepovec, parksOfCherepovec);
-        TownStreet[] streetOfCherepovec = {cherKrasnodoncev, cherLebedeva};
+        TownStreet[] streetsOfCherepovec = {cherKrasnodoncev, cherLebedeva};
 
-        Town cherepovec = new Town("Cherepovec", 315186, 122 , streetOfCherepovec);
+        Town cherepovec = new Town("Cherepovec", 315186, 122 , streetsOfCherepovec);
         cherepovec.getNewTownStreets("Cherepovetskaja neberejnaia", 323, 555, 9, false, housesOfCherepovec, parksOfCherepovec);
         System.out.println("Площадь улиц города Cherepovec равна: " + cherepovec.getTownStreetsTotalArea());
         System.out.println("Площадь домов города Cherepovec равна: " + cherepovec.getTownHousesTotalArea());

@@ -1,6 +1,6 @@
 //// ########## lesson_7 git exercise_1 ##########
-// 1. написать метод для класса улицы, который добавляет дом - добавление  неизвестного кол-ва улиц/домов
-// 1.1 написать метод для класса города, который добавляет улицу - добавление  неизвестного кол-ва улиц/домов
+// 1. написать метод для класса улицы, который добавляет дом - добавление неизвестного кол-ва улиц/домов
+// 1.1 написать метод для класса города, который добавляет улицу - добавление неизвестного кол-ва улиц/домов
 // 2. каждая улица возвращает площадь занимаемую домами
 // 2.1 каждый город возвращает площадь занимаемую улицами и площадь парков
 // 2.2 каждый город возвращает количество домов
@@ -9,13 +9,13 @@ package lesson7.home.work.exercise1;
 public class TownStreet {
     String streetName;
     int streetKadastrNumber;
-    long streetLength;
-    long streetWidth;
+    float streetLength;
+    float streetWidth;
     boolean mainStreet;
     TownHouse[] townHouses;
     TownPark[] townParks;
 
-    public TownStreet(String streetName, int streetKadastrNumber, long streetLength, long streetWidth, boolean mainStreet, TownHouse[] townHouses, TownPark[] townParks) {
+    public TownStreet(String streetName, int streetKadastrNumber, float streetLength, float streetWidth, boolean mainStreet, TownHouse[] townHouses, TownPark[] townParks) {
         this.streetName = streetName;
         this.streetKadastrNumber = streetKadastrNumber;
         this.streetLength = streetLength;
@@ -25,7 +25,7 @@ public class TownStreet {
         this.townParks = townParks;
     }
 
-    public void getNewTownHouse (int houseNumber, long houseLength, long houseWidth) {
+    public void getNewTownHouse (int houseNumber, float houseLength, float houseWidth) {
         if (this.townHouses == null) {
             TownHouse[] newTownHouse = new TownHouse[1];
             newTownHouse[0] = new TownHouse(houseNumber, houseLength, houseWidth);
@@ -69,7 +69,7 @@ public class TownStreet {
         return parksArea;
     }
 
-    public long getTownStreetArea(){
+    public float getTownStreetArea(){
         return this.streetLength * this.streetWidth;
     }
 
