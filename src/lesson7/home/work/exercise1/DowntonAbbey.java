@@ -20,7 +20,7 @@ public class DowntonAbbey {
         TownPark[] parksOfCherepovec = {parkAnniversary, parkLeninskyKomsomol};
 
         TownStreet cherKrasnodoncev = new TownStreet("Krasnodoncev", 215, 470, 9, true, houseNumberOneOnStreet, parkAnniversaryOnStreet);
-        cherKrasnodoncev.getNewTownHouse(10, 35, 10);
+        cherKrasnodoncev.addNewTownHouse(houseNumberOne);
         System.out.println("Площадь улицы Krasnodoncev равна: " + cherKrasnodoncev.getTownStreetArea());
         System.out.println("Площадь домов улицы Krasnodoncev равна: " + cherKrasnodoncev.getTownHousesArea());
         System.out.println("Площадь парков улицы Krasnodoncev равна: " + cherKrasnodoncev.getTownParksArea());
@@ -30,7 +30,7 @@ public class DowntonAbbey {
         TownStreet[] streetsOfCherepovec = {cherKrasnodoncev, cherLebedeva};
 
         Town cherepovec = new Town("Cherepovec", 315186, 122 , streetsOfCherepovec);
-        cherepovec.getNewTownStreets("Cherepovetskaja neberejnaia", 323, 555, 9, false, housesOfCherepovec, parksOfCherepovec);
+        cherepovec.addNewTownStreets(cherLebedeva);
         System.out.println("Площадь улиц города Cherepovec равна: " + cherepovec.getTownStreetsTotalArea());
         System.out.println("Площадь домов города Cherepovec равна: " + cherepovec.getTownHousesTotalArea());
         System.out.println("Площадь парков города Cherepovec равна: " + cherepovec.getTownParksTotalArea());

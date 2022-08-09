@@ -25,10 +25,10 @@ public class TownStreet {
         this.townParks = townParks;
     }
 
-    public void getNewTownHouse (int houseNumber, float houseLength, float houseWidth) {
+    public void addNewTownHouse (TownHouse townHouses) {
         if (this.townHouses == null) {
             TownHouse[] newTownHouse = new TownHouse[1];
-            newTownHouse[0] = new TownHouse(houseNumber, houseLength, houseWidth);
+            newTownHouse[0] = townHouses;
             this.townHouses = newTownHouse;
         }
         else {
@@ -36,7 +36,7 @@ public class TownStreet {
             for (int i = 0; i < this.townHouses.length; i++) {
                 newTownHouse[i] = this.townHouses[i];
             }
-            newTownHouse[this.townHouses.length] = new TownHouse(houseNumber, houseLength, houseWidth);
+            newTownHouse[this.townHouses.length] = townHouses;
             this.townHouses = newTownHouse;
         }
     }

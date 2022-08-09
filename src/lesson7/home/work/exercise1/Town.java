@@ -19,10 +19,10 @@ public class Town {
         this.townStreets = townStreets;
     }
 
-    public void getNewTownStreets (String streetName, int streetKadastrNumber, float streetLength, float streetWidth, boolean mainStreet, TownHouse[] townHouses, TownPark[] townParks) {
+    public void addNewTownStreets (TownStreet townStreets) {
         if (this.townStreets == null) {
             TownStreet[] newTownStreet = new TownStreet[1];
-            newTownStreet[0] = new TownStreet(streetName, streetKadastrNumber, streetLength, streetWidth, mainStreet, townHouses, townParks);
+            newTownStreet[0] = townStreets;
             this.townStreets = newTownStreet;
         }
         else {
@@ -30,7 +30,7 @@ public class Town {
             for (int i = 0; i < this.townStreets.length; i++) {
                 newTownStreet[i] = this.townStreets[i];
             }
-            newTownStreet[this.townStreets.length] = new TownStreet(streetName, streetKadastrNumber, streetLength, streetWidth, mainStreet, townHouses, townParks);
+            newTownStreet[this.townStreets.length] = townStreets;
             this.townStreets = newTownStreet;
         }
     }
