@@ -37,8 +37,8 @@ public class Town {
         return townHousesTotalQuantity;
     }
 
-    public long getTownStreetsTotalArea() {
-        long townStreetsTotalArea = 0;
+    public float getTownStreetsTotalArea() {
+        float townStreetsTotalArea = 0;
         for(int i = 0; i < townStreets.length; i++){
             TownStreet townStreet = townStreets[i];
             if (townStreet != null){
@@ -48,8 +48,8 @@ public class Town {
         return townStreetsTotalArea;
     }
 
-    public long getTownHousesTotalArea() {
-        long townHousesTotalArea = 0;
+    public float getTownHousesTotalArea() {
+        float townHousesTotalArea = 0;
         for(int i = 0; i < townStreets.length; i++){
             TownStreet townStreet = townStreets[i];
             if (townStreet != null){
@@ -59,8 +59,8 @@ public class Town {
         return townHousesTotalArea;
     }
 
-    public long getTownParksTotalArea() {
-        long townParksTotalArea = 0;
+    public float getTownParksTotalArea() {
+        float townParksTotalArea = 0;
         for(int i = 0; i < townStreets.length; i++){
             TownStreet townStreet = townStreets[i];
             if (townStreet != null){

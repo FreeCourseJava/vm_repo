@@ -40,8 +40,8 @@ public class TownStreet {
         return this.townHouses.length;
     }
 
-    public long getTownHousesArea() {
-        long housesArea = 0;
+    public float getTownHousesArea() {
+        float housesArea = 0;
         for(int i = 0; i < townHouses.length; i++){
             TownHouse townHouse = townHouses[i];
             if (townHouse != null){
@@ -51,8 +51,8 @@ public class TownStreet {
         return housesArea;
     }
 
-    public long getTownParksArea() {
-        long parksArea = 0;
+    public float getTownParksArea() {
+        float parksArea = 0;
         for(int i = 0; i < townParks.length; i++){
             TownPark townPark = townParks[i];
             if (townPark != null){
