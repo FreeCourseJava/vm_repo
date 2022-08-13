@@ -7,11 +7,9 @@
 package lesson7.home.work.exercise1;
 
 public class TownPark {
-    String parkName;
-    float parkArea;
+    private final float parkArea;
 
     public TownPark(String parkName, float parkArea) {
-        this.parkName = parkName;
         this.parkArea = parkArea;
     }
 
