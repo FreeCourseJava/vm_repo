@@ -7,10 +7,12 @@
 package lesson7.home.work.exercise1;
 
 public class TownHouse {
+    private int houseNumber;
     private final float houseLength;
     private final float houseWidth;
 
     public TownHouse(int houseNumber, float houseLength, float houseWidth) {
+        this.houseNumber = houseNumber;
         this.houseLength = houseLength;
         this.houseWidth = houseWidth;
     }

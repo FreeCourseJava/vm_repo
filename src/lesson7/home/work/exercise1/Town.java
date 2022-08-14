@@ -7,9 +7,15 @@
 package lesson7.home.work.exercise1;
 
 public class Town {
+    private String townName;
+    private int townPopulation;
+    private float townArea;
     private TownStreet[] townStreets;
 
     public Town(String townName, int townPopulation, float townArea, TownStreet[] townStreets) {
+        this.townName = townName;
+        this.townPopulation = townPopulation;
+        this.townArea = townArea;
         this.townStreets = townStreets;
     }
 

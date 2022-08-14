@@ -7,14 +7,21 @@
 package lesson7.home.work.exercise1;
 
 public class TownStreet {
+    private final String streetName;
+    private final int streetKadastrNumber;
     private final float streetLength;
     private final float streetWidth;
+    private final boolean mainStreet;
     private TownHouse[] townHouses;
     private final TownPark[] townParks;
 
     public TownStreet(String streetName, int streetKadastrNumber, float streetLength, float streetWidth, boolean mainStreet, TownHouse[] townHouses, TownPark[] townParks) {
+        this.streetName = streetName;
+        this.streetKadastrNumber = streetKadastrNumber;
         this.streetLength = streetLength;
         this.streetWidth = streetWidth;
+        this.mainStreet = mainStreet;
+        this.townHouses = townHouses;
         this.townParks = townParks;
     }
 
